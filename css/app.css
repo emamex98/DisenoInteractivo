@@ -1,0 +1,9 @@
+body, h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+}
+
+#page-head-img {
+  background-image: url("../img/fit.jpg");
+  background-size: cover;
+  color: #ffffff;
+}
