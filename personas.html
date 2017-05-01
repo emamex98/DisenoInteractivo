@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SolidarioMX</title>
 
+  <link href="css/jquery-ui.css" rel="stylesheet">
   <link href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="css/foundation.css">
@@ -24,14 +25,14 @@
         <li><a href="solution.html">Solución</a></li>
         <li><a href="personas.html">Opiniones</a></li>
         <li><a href="prototipo.html">Directorio</a></li>
+        <li><a href="estrategia.html">Estrategia</a></li>
+        <li><a href="design_process.html">Proceso de Diseño</a></li>
+        <li><a href="focusgroup.html">Focus Group</a></li>
+        <li><a href="propuesta.html">Propuesta</a></li>
         <li><a href="fuentes.html">Fuentes</a></li>
         <!-- <li><a href="kids.html">Niños</a></li>
-        <li><a href="propuesta.html">Propuesta</a></li>
-        <li><a href="estrategia.html">Plan Estratégico</a></li>
         <li><a href="prototipos.html">Prototipos</a></li>
-        <li><a href="design_process.html">Proceso de Diseño</a></li> -->
-        <!-- <li><a href="applewatch.html">Apple watch</a></li> -->
-
+        <li><a href="applewatch.html">Apple watch</a></li> -->
       </ul>
     </div>
   </div>
@@ -56,12 +57,43 @@
         <div class="mdl-card__media"><img class="article-image" src="img/cover_personas.jpg" border="0" alt="Portfolio Page">
         </div>
         <div class="mdl-grid site-copy">
-          <div class="mdl-cell mdl-cell--12-col"><p><h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Conoce al usuario</h3></p>
-            <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
-              <img src="img/pers1.png" width="100%">
-              <img src="img/pers2.png" width="100%">
-              <img src="img/pers3.png" width="100%">
+          <div class="mdl-cell mdl-cell--12-col">
+            <div class="mdl-grid site-copy">
+              <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
+                  <div id="accordion">
+                    <h3>Conoce al Usuario</h3>
+                    <div>
+                      <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding ">
+                        <img src="img/pers1.png" width="100%">
+                        <img src="img/pers2.png" width="100%">
+                        <img src="img/pers3.png" width="100%">
+                      </div>
+                    </div>
+                    <h3>Experto: Opinión antes de contruir una solución</h3>
+                    <div>
+                      <iframe width="100%" height="300" src="https://www.youtube.com/embed/C6oAjaubzDM" frameborder="0" allowfullscreen></iframe><br>
+                      <p>Profesionistas en el área de la economía, la administración y los negocios, que puedan explicar la forma en la que la economía de estos dos países se relacionan y la manera en que esto afecta a los usuarios. En especial aquellos que estén familiarizados con el TLCAN, además de que es necesario que conozcan acerca de la dinámica de las PyMEs.</p>
+                    </div>
+                    <h3>Experto: Opinión depués de contruir una solución</h3>
+                    <div>
+                      <b>Reporte de retroalimentacion con el experto</b><br>
+                      <p>
+                        La entrevista con el profesor Eduardo González Velázquez fue muy fructífera. Al momento de presentarle el prototipo de la aplicación para celular, se mostró muy positivo acerca del enfoque de la idea, comentando que un directorio de negocios a pesar de ser algo muy simple, muchas veces tiene un buen impacto ya que el cliente se siente afín a estos negocios gracias a los beneficios otorgados por la aplicación.
+                      </p>
+                      <p>
+                        Nos comentó que sería interesante que se mejorará la interacción con el usuario proporcionando información simple de leer, dio como ejemplo la distancia entre el cliente y el negocio, además mencionó que sería importante tener los descuentos en un lugar más visible ya que esta es una de las funciones que más atención va a atraer.
+                      </p>
+                      <p>
+                        Por último nos recomendó que analizaramos la aplicación circulo de informador, la cual es muy similar a la nuestra pero mostrando negocios no exclusivamente mexicanas. Esta aplicación solo muestra la información general de los negocios, así como la ubicación y los descuentos que aplican. La transacción y la aplicación del descuento se realiza mediante una tarjeta que se presenta en el local, él nos recomendó que consideremos el uso de una tarjeta de SolidarioMX.
+                      </p>
+                      <img width="100%" src="img/Profesor.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -93,8 +125,10 @@
 
 
 <script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/what-input.js"></script>
-<script src="js/vendor/foundation.js"></script>
-<script src="js/app.js"></script>
+<script src="js/vendor/jquery-ui.js"></script>
+<script>
+$( "#accordion" ).accordion();
+</script>
+
 </body>
 </html>
